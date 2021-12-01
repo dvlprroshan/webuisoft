@@ -1,11 +1,14 @@
 import React, { ReactElement } from "react";
 import BlogCatLabel from "../../global/BlogCatLabel";
+import Link from 'next/link';
 
 interface Props {}
 
 const BlogCard = ({ imgSrc }) => {
   return (
-    <div className="blogCard">
+    <a href="/blogs/single-blog" className="blogCard">
+
+
       <div className="cardImg"></div>
       <div className="cardTags">
         <BlogCatLabel theme="orange" size="small" text="Technical" />
@@ -26,6 +29,8 @@ const BlogCard = ({ imgSrc }) => {
           <div className="name">Roshan Kumar</div>
         </div>
       </div>
+
+
       <style jsx>{`
         .blogCard {
           width: 300px;
@@ -92,7 +97,7 @@ const BlogCard = ({ imgSrc }) => {
           color: #afafaf;
         }
       `}</style>
-    </div>
+    </a>
   );
 };
 

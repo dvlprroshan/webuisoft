@@ -328,23 +328,22 @@ export default function CodeHighlighter({
             .window .icons div[class*="btn-"] {
               height: 15px;
               width: 15px;
-              background-color: red;
+
               border-radius: 50%;
               cursor: pointer;
               position: relative;
             
             }
-            }
-            .window .icons .btn-red.btn-red {
+
+            .btn-red {
               background-color: rgb(252, 63, 63);
             }
-            .window .icons .btn-orange.btn-orange {
+            .btn-orange {
               background-color: rgb(255, 131, 59);
             }
-            .window .icons .btn-green.btn-green {
+            .btn-green {
               background-color: rgb(59, 255, 59);
             }
-
             .expandWindow {
               position: fixed;
               margin: auto;
